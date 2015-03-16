@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.blueyea.mobilesafe.activity.MainActivity" >
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="30dip"
+        android:background="#00FFff"
+        android:gravity="center"
+        android:text="请输入密码"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/chpwd"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/alert_sure"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>
