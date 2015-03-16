@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:blueyea="http://schemas.android.com/apk/res/com.blueyea.mobilesafe"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blueyea.mobilesafe.activity.MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#00FF11"
+        android:gravity="center"
+        android:text="设置中心"
+        android:textSize="25sp" />
+
+    <com.blueyea.mobilesafe.ui.SettingItem
+        android:id="@+id/autoupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        blueyea:setting_item_descOff="自动更新已经关闭"
+        blueyea:setting_item_descOn="自动更新已经开启"
+        blueyea:setting_item_title="开启自动更新" >
+    </com.blueyea.mobilesafe.ui.SettingItem>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#000000" />
+
+</LinearLayout>

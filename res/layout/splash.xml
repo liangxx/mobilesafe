@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/luncher_bg"
+    tools:context="com.blueyea.mobilesafe.activity.SplashActivity" >
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/splash_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/splash_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_appversion"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/splash_updatell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/splash_update_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
