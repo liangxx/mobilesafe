@@ -87,7 +87,7 @@ public class SplashActivity extends Activity {
 		
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.splash);
+		setContentView(R.layout.activity_splash);
 
 		SharedPreferences setting = getSharedPreferences("setting", MODE_PRIVATE);
 		if(setting.getBoolean("autoupdate", false)) checkandupdate();

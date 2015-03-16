@@ -20,7 +20,7 @@ public class SettingItem extends RelativeLayout {
 	String setting_item_descOff_str;
 
 	private void initView(Context context) {
-		View view = View.inflate(context, R.layout.setting_item, SettingItem.this);
+		View view = View.inflate(context, R.layout.item_setting, SettingItem.this);
 		
 		settint_item_cb = (CheckBox) view.findViewById(R.id.setting_item_cb);
 		setting_item_desc = (TextView) view.findViewById(R.id.setting_item_desc);
